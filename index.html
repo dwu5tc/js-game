@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Petting Game</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Dosis:700|Pattaya" rel="stylesheet">
+
+</head>
+<body>
+	<main>
+		<div class="wrapper">
+			<section class="start-window">
+				<h1>Petting Game</h1>
+				<h4>Choose an Animal to Pet!</h4>
+				<div class="animal-choice">
+					<div class="animal-choice__one">
+						<div class="container">
+							<img src="images/dog.png" alt="Dog">
+						</div>
+						<h3>Dog</h3>
+					</div>
+					<div class="animal-choice__two">
+						<div class="container">
+							<img src="images/cat.png" alt="Cat">
+						</div>
+						<h3>Cat</h3>
+					</div>
+				</div>
+				<button class="start-button">Start</button>
+			</section>
+			<section class="info-window">
+				<h2>Score: <span class="player-score">0</span></h2>
+				<h2>Lives: <span class="player-lives">3</span></h2>
+				<h2 class="player-combo">Combo: <span class="player-combo__value">0</span></h2>
+			</section>
+			<section class="game-over__window">
+				<p>Game Over</p>
+				<label for="reload-page">
+				<input name="reload-page" type="button" onClick="window.location.reload()" value="Start Again">
+			</section>
+			<div class="footer">Copyright © 2017 Tina Chang and Dean Wu</div>
+		</div>
+	</main>
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
